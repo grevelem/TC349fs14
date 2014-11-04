@@ -1,0 +1,96 @@
+/* line 1, ../sass/components/_base.scss */
+body {
+  background: #343b47;
+}
+
+/* line 1, ../sass/components/_header.scss */
+.header {
+  background: #343b47;
+  height: 370px;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+/* line 7, ../sass/components/_header.scss */
+.header li {
+  color: #f06a36;
+  text-align: center;
+  list-style-type: none;
+  font-size: 24px;
+  font-family: lucida Sans Unicode;
+}
+/* line 14, ../sass/components/_header.scss */
+.header img {
+  height: 250px;
+  width: 150px;
+  border-radius: 25px;
+  border-radius-top: 20px;
+  padding-bottom: 0px;
+}
+
+/* line 1, ../sass/components/_mediagrid.scss */
+.media-grid {
+  list-style-type: none;
+  background: #4d576a;
+  margin: 0;
+  padding: 0;
+}
+/* line 6, ../sass/components/_mediagrid.scss */
+.media-grid li {
+  background: #4d576a;
+  float: left;
+  height: 200px;
+  width: 20%;
+}
+/* line 12, ../sass/components/_mediagrid.scss */
+.media-grid img {
+  height: 200px;
+  width: 245px;
+}
+/* line 16, ../sass/components/_mediagrid.scss */
+.media-grid li:nth-child(even) {
+  background: #384256;
+}
+
+/* line 1, ../sass/components/_herosection.scss */
+.herosection {
+  background: #343b47;
+  list-style-type: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+/* line 8, ../sass/components/_herosection.scss */
+.herosection img {
+  height: 270px;
+  width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 2, ../sass/components/_aboutme.scss */
+.aboutme {
+  margin: 0;
+  padding-top: 0px;
+  background: #4d576a;
+  color: #FFFFFF;
+  list-style-type: none;
+  padding-bottom: 30px;
+}
+/* line 9, ../sass/components/_aboutme.scss */
+.aboutme h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+/* line 13, ../sass/components/_aboutme.scss */
+.aboutme ul {
+  list-style-type: none;
+  text-align: center;
+  padding-right: 40px;
+}
+
+/*avoid styling individual elements no h2, h3, etc. first step is get element together to recreate
+wireframe in broweser. then create a first draft of your portfolio content. this should include all site copywriting and media (images, video, etc
+place this draft copy in your design system html page reference monday's lecture and slides on crafting solid website copy) add real content where you see solid lines on the wireframe*/
