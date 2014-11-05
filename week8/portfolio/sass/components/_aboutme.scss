@@ -1,4 +1,9 @@
-
+@mixin hover-link {
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
 .aboutme {
   margin: 0;
   padding-top: 0px;
@@ -9,6 +14,7 @@
   h2 {
     padding-top: 20px;
     text-align: center;
+    @include hover-link;
   }
   ul {
     list-style-type: none;

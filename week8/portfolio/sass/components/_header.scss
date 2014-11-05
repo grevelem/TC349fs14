@@ -1,3 +1,9 @@
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius:$radius;
+  border-radius: $radius;
+}
 .header {
   background: #343b47;
   height: 370px;
@@ -14,8 +20,10 @@
   img {
     height: 250px;
     width: 150px;
-    border-radius: 25px;
     border-radius-top: 20px;
     padding-bottom: 0px;
+    @include border-radius(25px);
+
   }
-} 
+
+}
