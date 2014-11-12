@@ -1,0 +1,33 @@
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius:$radius;
+  border-radius: $radius;
+}
+@mixin transform{
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+.herosection {
+  background: #343b47;
+  list-style-type: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+li {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  display:inline-block;
+  position:fixed;
+  @include border-radius(15px);
+  @include transform(rotate(360deg));
+  }
+}

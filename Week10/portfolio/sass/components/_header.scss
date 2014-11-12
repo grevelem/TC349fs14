@@ -1,0 +1,40 @@
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius:$radius;
+  border-radius: $radius;
+}
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+.header {
+  background: #343b47;
+  height: 370px;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  }
+  li {
+    color: #f06a36;
+    text-align: center;
+    list-style-type: none;
+    font-size: 24px;
+    font-family: lucida Sans Unicode;
+  }
+  img {
+    height: 250px;
+    width: 150px;
+    border-radius-top: 20px;
+    padding-bottom: 0px;
+    @include border-radius(25px);
+    -webkit-transition: width 2s, height 2s;
+    -webkit-transition: with 2s, height 2s, background-color 2s, transform 2s;
+  }
+  img:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height:200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}

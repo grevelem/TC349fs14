@@ -1,0 +1,31 @@
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius:$radius;
+  border-radius: $radius;
+}
+.media-grid {
+  list-style-type: none;
+  background: #4d576a;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  li {
+    background: #4d576a;
+    float: left;
+    height: 200px;
+    width: 20%;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+    @include border-radius(10px);
+  }
+  li:nth-child(even) {
+    background: #384256;
+  }
+  &.media-grid-sm li {
+    width: 20%;
+    height: 190px;
+  }
+}
