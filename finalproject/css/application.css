@@ -1,0 +1,276 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+/* line 2, ../sass/components/_base.scss */
+body {
+  background: #433834;
+  margin: 0;
+}
+
+/* line 1, ../sass/components/_navigation.scss */
+.nav {
+  height: 40px;
+  background: #caad81;
+  font-family: georgia, serif;
+}
+/* line 5, ../sass/components/_navigation.scss */
+.nav ul {
+  margin: 0;
+  padding: 0;
+  position: block;
+}
+/* line 9, ../sass/components/_navigation.scss */
+.nav ul li {
+  list-style: none;
+  padding-left: 25px;
+}
+/* line 12, ../sass/components/_navigation.scss */
+.nav ul li a {
+  text-decoration: none;
+  float: left;
+  display: block;
+  padding: 10px 92px;
+  text-align: center;
+  color: #433834;
+}
+/* line 19, ../sass/components/_navigation.scss */
+.nav ul li a:hover {
+  color: #567eaf;
+}
+
+/* line 26, ../sass/components/_navigation.scss */
+.headerBreak {
+  width: 100%;
+  height: 0;
+  border-bottom: 3px solid;
+  border-color: #ffffff;
+}
+
+/* line 1, ../sass/components/_header.scss */
+.header {
+  background: #567eaf;
+  padding: 10px;
+  height: 350px;
+  margin: 0;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  text-align: center;
+}
+/* line 13, ../sass/components/_header.scss */
+.header h1 {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-family: georgia, serif;
+  margin: 0;
+}
+/* line 19, ../sass/components/_header.scss */
+.header h2 {
+  color: #ffffff;
+  font-size: 1em;
+  font-family: georgia, serif;
+  margin: 0;
+}
+/* line 25, ../sass/components/_header.scss */
+.header img {
+  height: 240px;
+  width: 240px;
+  text-align: center;
+}
+
+/* line 2, ../sass/components/_mediagrid.scss */
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+/* line 10, ../sass/components/_mediagrid.scss */
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+/* line 14, ../sass/components/_mediagrid.scss */
+.gallery > div > img {
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0);
+  /* hack */
+}
+/* line 20, ../sass/components/_mediagrid.scss */
+.gallery > div:hover {
+  z-index: 1;
+}
+/* line 22, ../sass/components/_mediagrid.scss */
+.gallery > div:hover > img {
+  transform: scale(1.8, 1.8);
+  transition: .3s transform;
+}
+
+/* line 31, ../sass/components/_mediagrid.scss */
+.cf:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 36, ../sass/components/_mediagrid.scss */
+.cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+
+/* line 43, ../sass/components/_mediagrid.scss */
+.bottombreak {
+  padding-bottom: 30px;
+}
+
+/* line 1, ../sass/components/_herosection.scss */
+.about {
+  color: #433834;
+  background: #caad81;
+  margin-top: 40px;
+  display: block;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-color: #ffffff;
+  font-family: georgia, serif;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: center;
+}
+
+/* line 18, ../sass/components/_herosection.scss */
+p {
+  text-align: center;
+}
+
+/* line 23, ../sass/components/_herosection.scss */
+h1 {
+  font-family: georgia, serif;
+}
+
+/* line 1, ../sass/components/_history.scss */
+.history {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 3px;
+  border-bottom-color: #ffffff;
+  border-style: solid;
+  border-top: 0px;
+  font-family: georgia, serif;
+  font-size: 1em;
+}
+
+/* line 11, ../sass/components/_history.scss */
+#p {
+  color: #ffffff;
+}
+
+/* line 15, ../sass/components/_history.scss */
+#text {
+  color: #ffffff;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* line 1, ../sass/components/_services.scss */
+.services {
+  border-bottom: 3px;
+  border-style: solid;
+  border-top: 0;
+  border-bottom-color: #ffffff;
+}
+
+/* line 7, ../sass/components/_services.scss */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* line 13, ../sass/components/_services.scss */
+#servtext {
+  color: #ffffff;
+}
+
+/* line 1, ../sass/components/_footer.scss */
+.footer {
+  background: #567eaf;
+  height: auto;
+  border-bottom: 3px solid;
+  border-bottom-color: #ffffff;
+  margin-top: 0;
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+  color: #433834;
+}
+
+/* line 12, ../sass/components/_footer.scss */
+i {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+/* line 1, ../sass/components/_history.scss */
+.history {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 3px;
+  border-bottom-color: #ffffff;
+  border-style: solid;
+  border-top: 0px;
+  font-family: georgia, serif;
+  font-size: 1em;
+}
+
+/* line 11, ../sass/components/_history.scss */
+#p {
+  color: #ffffff;
+}
+
+/* line 15, ../sass/components/_history.scss */
+#text {
+  color: #ffffff;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* line 1, ../sass/components/_order.scss */
+.order {
+  border-bottom: 3px;
+  border-style: solid;
+  border-bottom-color: #ffffff;
+  border-top: 0;
+  padding: 20px;
+}
+
+/* line 8, ../sass/components/_order.scss */
+#content {
+  color: #ffffff;
+}
+
+/* line 1, ../sass/components/_contact.scss */
+.contact {
+  text-align: center;
+  border-bottom: 3px;
+  border-style: solid;
+  border-bottom-color: #ffffff;
+  border-top: 0;
+}
+
+/* line 8, ../sass/components/_contact.scss */
+#textcolor {
+  color: #ffffff;
+}
